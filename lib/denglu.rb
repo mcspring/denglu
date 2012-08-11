@@ -2,6 +2,9 @@
 require 'json'
 require 'open-uri'
 require 'rest_client'
+require 'denglu/base'
+require 'denglu/auth'
+require 'denglu/comment'
 require 'denglu/version'
 
 module Denglu
