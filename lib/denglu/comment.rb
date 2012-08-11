@@ -26,7 +26,7 @@ module Denglu
 
       response = request_api(req_method, req_uri, req_options)
 
-      normalize_comments JSON.parse(response)
+      JSON.parse(response)
     end
 
     def total(resource=nil)
