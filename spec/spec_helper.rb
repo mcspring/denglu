@@ -8,9 +8,10 @@ RSpec.configure do |config|
 end
 
 
-module Denglud
+# Setup spec app config
+module Denglu
 
-  Config.app_id = ''
-  Config.app_key = ''
+  Config.app_id = '43669den56kf1gxRCmfn7UBW5kevQ3'
+  Config.app_key = '458394366Cr0ppwALx71Sx9m2f8jm6'
 
 end
