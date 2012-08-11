@@ -1,5 +1,5 @@
 #!/usr/bin/env rake
-require 'bundle/gem_tasks'
+require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 
 desc 'Default spec task'
