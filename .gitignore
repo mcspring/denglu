@@ -1,0 +1,8 @@
+*.swp
+*.log
+*.gem
+*.rbc
+.bundle
+.config
+rdoc
+spec/reports
