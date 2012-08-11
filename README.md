@@ -1,14 +1,14 @@
-= Denglu
+# Denglu
 
 denglu library provides access to [Denglu](http://www.denglu.cc), this is unofficial ruby implementation.
 
-= Installation
+# Installation
 
     gem install denglu
 
-= Usage
+# Usage
 
-== Initialize the comment
+## Initialize the comment
 
     require 'denglu'
 
@@ -23,23 +23,23 @@ or use object initialize params
     comment = Denglu::Comment.new('your-app-id', 'your-app-key')
     #=> #<Denglu::Comment:...>
 
-== List comments
+## List comments
 
     comment.list
     #=> [{"postid" => ..., "content" => ..., "mediaID" => ..., "createTime" => ..., "state" => ..., "commentID" => ..., "parentID" => ..., ...},
     #    {...}]
 
-== Count comments
+## Count comments
 
     comment.total
     #=> [{"id" => ..., "count" => ..., "url" => ...},
     #    {...}]
 
-= See also
+# See also
 
 * [Denglu Document](http://developer.denglu.cc/)
 
-= Copyright
+# Copyright
 
 Copyright (c) 2012 Spring MC. See [LICENSE](http://github.com/mcspring/denglu/raw/master/LICENSE) for details.
 
