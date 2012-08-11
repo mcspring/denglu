@@ -1,8 +1,4 @@
 # -* encoding: utf-8 -*-
-require 'open-uri'
-require 'json'
-require 'digest/md5'
-require 'rest_client'
 
 module Denglu
 
@@ -57,10 +53,3 @@ module Denglu
 
 end
 
-comment = Denglu::Comment.new '43669den56kf1gxRCmfn7UBW5kevQ3', '458394366Cr0ppwALx71Sx9m2f8jm6'
-p comment.list
-p comment.latest
-p comment.total
-p comment.total 131
-p comment.total 'http://dev.gigabase.org:3000/en/projects/131?img=5959'
-#p comment.stat

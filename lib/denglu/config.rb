@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+
 module Denglu
 
   class Config
@@ -31,3 +33,4 @@ module Denglu
   end
 
 end
+
