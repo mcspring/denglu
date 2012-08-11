@@ -13,6 +13,8 @@ module Denglu
       }
 
       response = request_api(req_method, req_uri, req_options)
+
+      normalize_comments JSON.parse(response)
     end
 
     def latest(max=20)
@@ -23,6 +25,8 @@ module Denglu
       }
 
       response = request_api(req_method, req_uri, req_options)
+
+      normalize_comments JSON.parse(response)
     end
 
     def total(resource=nil)
@@ -37,6 +41,8 @@ module Denglu
       end
 
       response = request_api(req_method, req_uri, req_options)
+
+      JSON.parse response
     end
 
     def stat(from_ts=nil)
@@ -47,6 +53,20 @@ module Denglu
       }
 
       response = request_api(req_method, req_uri, req_options)
+    end
+
+  protected
+    def normalize_comments(comments)
+      comments.collect do |comment|
+        comment['parentID'] = 0
+        if comment.has_key?('parent')
+          comment['parentID'] = comment['parent']['commentID']
+
+          comment.delete 'parent'
+        end
+
+        comment
+      end
     end
 
   end
