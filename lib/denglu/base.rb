@@ -5,6 +5,16 @@ module Denglu
   class Base
     attr_reader :app_id, :app_key
 
+    # Initialization
+    #
+    # Example:
+    #   >> denglu = Denglu::Base.new
+    #   => #<#Denglu::Base...>
+    #
+    # Arguments:
+    #   app_id: (String)
+    #   app_key: (String)
+    #
     def initialize(app_id=nil, app_key=nil)
       @app_id = app_id || Config.app_id
       @app_key = app_key || Config.app_key
